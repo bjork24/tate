@@ -37,8 +37,10 @@
     "load-grunt-config": "^0.16.0"
   },
   "dependencies": {
+    "app-root-path": "^1.0.0",
     "chalk": "^1.0.0",
     "commander": "^2.7.1",
+    "css-parse": "^2.0.0",
     "glob-all": "^3.0.1",
     "gzip-size": "^1.0.0",
     "node-sass": "^2.0.1",
