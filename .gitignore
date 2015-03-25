@@ -11,6 +11,7 @@ pids
 coverage
 
 node_modules
+.npm-debug.log
 
 # Users Environment Variables
 .DS_Store

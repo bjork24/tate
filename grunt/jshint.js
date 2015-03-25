@@ -4,5 +4,5 @@ module.exports = {
   },
   grunt: ['Gruntfile.js','grunt/*.js'],
   cli: ['bin/*.js'],
-  bin: ['lib/*.js']
+  lib: ['lib/*.js']
 };

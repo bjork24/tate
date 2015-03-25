@@ -1,0 +1,16 @@
+@import '../variables';
+
+.u- {
+  // padding
+  &p0 { padding: 0; }
+  &p1 { padding: $space1; }
+  &p2 { padding: $space2; }
+  &p3 { padding: $space3; }
+  &p4 { padding: $space4; }
+  // margin
+  &m0 { margin: 0; }
+  &m1 { margin: $space1; }
+  &m2 { margin: $space2; }
+  &m3 { margin: $space3; }
+  &m4 { margin: $space4; }
+}

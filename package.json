@@ -37,6 +37,11 @@
     "load-grunt-config": "^0.16.0"
   },
   "dependencies": {
-    "commander": "^2.7.1"
+    "chalk": "^1.0.0",
+    "commander": "^2.7.1",
+    "glob-all": "^3.0.1",
+    "gzip-size": "^1.0.0",
+    "node-sass": "^2.0.1",
+    "pretty-bytes": "^1.0.3"
   }
 }
