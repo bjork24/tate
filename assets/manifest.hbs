@@ -1,0 +1,18 @@
+# Tate's annotated code
+
+Here's a rundown of the code we lovingly ['tated](http://github.com/bjork24/tate) for you
+
+{{#files}}
+## {{file}}
+```
+minified     {{mini}}
+gzipped      {{gzip}}
+rules        {{rules}}
+selectors    {{selectors}}
+
+imported by:
+{{#each importedBy}}
+  - {{this}}
+{{/each}}
+```
+{{/files}}

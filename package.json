@@ -43,6 +43,7 @@
     "css-parse": "^2.0.0",
     "glob": "^5.0.3",
     "gzip-size": "^1.0.0",
+    "handlebars": "^3.0.1",
     "lodash": "^3.5.0",
     "node-sass": "^2.0.1",
     "pretty-bytes": "^1.0.3"
