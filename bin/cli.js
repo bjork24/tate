@@ -5,7 +5,7 @@
 var _ = require('lodash');
 var cli = require('commander');
 var tate = require('../lib/tate');
-var log = require('../lib/utils').log;
+var u = require('../lib/utils');
 
 cli
   .version(require('../package.json').version)
@@ -25,7 +25,7 @@ var opts = {};
 if ( cli.args.length ) {
   var files = cli.args;
 } else {
-  log.warn('No input file or directory specified.');
+  u.log.warn('No input file or directory specified.');
   cli.help();
 }
 
@@ -35,13 +35,13 @@ if ( cli.ignore ) {
 
 if ( cli.sass || cli.less || cli.styl || cli.css ) {
   var ext = [];
-  if (cli.sass) { ext.push('.sass', '.scss'); }
-  if (cli.less) { ext.push('.less'); }
-  if (cli.styl) { ext.push('.styl'); }
-  if (cli.css)  { ext.push('.css'); }
+  if (cli.sass) { ext.push('sass', 'scss'); }
+  if (cli.less) { ext.push('less'); }
+  if (cli.styl) { ext.push('styl'); }
+  if (cli.css)  { ext.push('css'); }
   _.extend(opts, { ext: ext });
 } else {
-  log.warn('No file type specified. Defaulting to .css');
+  u.log.warn('No file type specified. Defaulting to .css');
 }
 
 if ( cli.append || cli.manifest || cli.terminal ) {
@@ -51,7 +51,7 @@ if ( cli.append || cli.manifest || cli.terminal ) {
   if (cli.terminal)  { output.push('terminal'); }
   _.extend(opts, { output: output });
 } else {
-  log.warn('No output type specified. Defaulting to terminal');
+  u.log.warn('No output type specified. Defaulting to terminal');
 }
 
-tate(files, opts);
+tate.it(files, opts);
