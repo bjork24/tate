@@ -1,6 +1,6 @@
 {
   "name": "tate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Metric annotations in your stylesheets",
   "main": "lib/tate.js",
   "scripts": {
@@ -15,7 +15,12 @@
     "url": "https://github.com/bjork24/tate.git"
   },
   "keywords": [
-    "css"
+    "css",
+    "sass",
+    "scss",
+    "annotations",
+    "documentation",
+    "metrics"
   ],
   "author": "Dan Chilton <dan.chilton@gmail.com>",
   "license": "MIT",
