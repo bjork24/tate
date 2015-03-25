@@ -33,25 +33,27 @@ if ( cli.ignore ) {
   _.extend(opts, { ignore: cli.ignore.split(',') });
 }
 
+var ext = [];
 if ( cli.sass || cli.less || cli.styl || cli.css ) {
-  var ext = [];
   if (cli.sass) { ext.push('sass', 'scss'); }
   if (cli.less) { ext.push('less'); }
   if (cli.styl) { ext.push('styl'); }
   if (cli.css)  { ext.push('css'); }
-  _.extend(opts, { ext: ext });
 } else {
   u.log.warn('No file type specified. Defaulting to .css');
+  ext.push('css');
 }
+_.extend(opts, { ext: ext });
 
+var output = [];
 if ( cli.append || cli.manifest || cli.terminal ) {
-  var output = [];
   if (cli.append) { output.push('append'); }
   if (cli.manifest) { output.push('manifest'); }
   if (cli.terminal)  { output.push('terminal'); }
-  _.extend(opts, { output: output });
 } else {
   u.log.warn('No output type specified. Defaulting to terminal');
+  output.push('terminal');
 }
+_.extend(opts, { output: output });
 
 tate.it(files, opts);
