@@ -17,7 +17,6 @@ cli
   .option('-a, --append', 'Output is appended to each matching file')
   .option('-m, --manifest', 'Output is saved to a manifest file')
   .option('-t, --terminal', 'Output is displayed in terminal only')
-  .option('-i, --ignore [path]', 'Paths to ignore, comma seperated NO SPACES')
   .parse(process.argv);
 
 var opts = {};
@@ -27,10 +26,6 @@ if ( cli.args.length ) {
 } else {
   u.log.warn('No input file or directory specified.');
   cli.help();
-}
-
-if ( cli.ignore ) {
-  _.extend(opts, { ignore: cli.ignore.split(',') });
 }
 
 var ext = [];
