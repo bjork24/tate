@@ -1,6 +1,6 @@
 {
   "name": "tate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Metric annotations in your stylesheets",
   "main": "lib/tate.js",
   "scripts": {
