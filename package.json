@@ -8,7 +8,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "tate": "bin/cli.js"
+    "tate": "cli.js"
   },
   "repository": {
     "type": "git",
