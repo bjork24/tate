@@ -9,10 +9,12 @@ minified     {{mini}}
 gzipped      {{gzip}}
 rules        {{rules}}
 selectors    {{selectors}}
+{{#if importedBy}}
 
 imported by:
 {{#each importedBy}}
   - {{this}}
 {{/each}}
+{{/if}}
 ```
 {{/files}}
