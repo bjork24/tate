@@ -27,5 +27,6 @@ $ tate --help
     -c, --css       Annotate .css files
     -a, --append    Output is appended to each matching file
     -m, --manifest  Output is saved to a manifest file
-    -t, --terminal  Output is displayed in terminal only
+    -t, --terminal  Output is displayed in terminal
+    -e, --erase     Erase generated annotation from files
 ```

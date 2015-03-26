@@ -3,6 +3,6 @@ module.exports = {
     jshintrc: true
   },
   grunt: ['Gruntfile.js','grunt/*.js'],
-  cli: ['bin/*.js'],
+  cli: ['cli.js'],
   lib: ['lib/*.js']
 };
