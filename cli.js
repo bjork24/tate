@@ -4,11 +4,11 @@
 
 var _ = require('lodash');
 var cli = require('commander');
-var tate = require('../lib/tate');
-var u = require('../lib/utils');
+var tate = require('./lib/tate');
+var u = require('./lib/utils');
 
 cli
-  .version(require('../package.json').version)
+  .version(require('./package.json').version)
   .usage('[options] <file ...>')
   .option('-s, --sass', 'Annotate .sass and .scss files')
   .option('-l, --less', 'Annotate .less files')
