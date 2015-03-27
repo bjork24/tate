@@ -1,6 +1,6 @@
 {
   "name": "tate",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "Generate useful annotations in your stylesheets (sass, less, stylus, or css)",
   "main": "lib/tate.js",
   "scripts": {
