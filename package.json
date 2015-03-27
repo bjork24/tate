@@ -1,7 +1,7 @@
 {
   "name": "tate",
   "version": "0.0.11",
-  "description": "Metric annotations in your stylesheets",
+  "description": "Generate useful annotations in your stylesheets (sass, less, stylus, or css)",
   "main": "lib/tate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
