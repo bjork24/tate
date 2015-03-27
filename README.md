@@ -2,7 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/bjork24/tate/badges/gpa.svg)](https://codeclimate.com/github/bjork24/tate) [![Dependency Status](https://david-dm.org/bjork24/tate.svg)](https://david-dm.org/bjork24/tate)
 
-Tate generates useful annotations (or tates) in your stylesheets, repo, or terminal! With tate, you can easily see where your styles are being imported, fully compiled file sizes, and css stats.
+Tate generates useful annotations (or tates) in your stylesheets, repo, or terminal. With tate, you can easily see where your styles are being imported, fully compiled file sizes, and css stats.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Install globally with NPM:
 ```
 $ tate --help
 
-  Usage: cli [options] <file ...>
+  Usage: tate [options] <file ...>
 
   Options:
 
