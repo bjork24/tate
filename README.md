@@ -33,7 +33,7 @@ $ tate --help
 
 ## Examples
 
-** Search the `test` directory for less and sass files, then output tates to the terminal **
+**Search the `test` directory for less and sass files, then output tates to the terminal**
 
 `$ tate -slt test/`
 
@@ -41,7 +41,7 @@ Which results in output similar to this (only a small portion is shown):
 
 ![Tate output](http://i.imgur.com/xi0bKzH.png)
 
-** Search the `test` directory for sass files, then append the tate to each file **
+**Search the `test` directory for sass files, then append the tate to each file**
 
 `$ tate -sa test/`
 
@@ -68,7 +68,7 @@ tates from all `.less` files:
 
 `$ tate -le test/`
 
-** Search the `test` directory for all style file types and output the tates in a single `tate.md` **
+**Search the `test` directory for all style file types and output the tates in a single `tate.md`**
 
 `$ tate -cslym test/`
 
