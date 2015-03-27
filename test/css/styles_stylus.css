@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  box-sizing: border-box;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]),
+[hidden],
+template {
+  display: none;
+  height: 0;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+svg {
+  max-height: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  box-sizing: content-box;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+small {
+  font-size: 80%;
+}
+strong,
+b {
+  font-weight: 700;
+}
+ul,
+ol {
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+}
+ul > ul,
+ol > ul,
+ul > ol,
+ol > ol {
+  margin: 0;
+}
+p,
+ul,
+ol,
+pre,
+hr {
+  margin-bottom: 1rem;
+}
+.u-p0 {
+  padding: 0;
+}
+.u-p1 {
+  padding: 0.5rem;
+}
+.u-p2 {
+  padding: 1rem;
+}
+.u-p3 {
+  padding: 2rem;
+}
+.u-p4 {
+  padding: 4rem;
+}
+.u-m0 {
+  margin: 0;
+}
+.u-m1 {
+  margin: 0.5rem;
+}
+.u-m2 {
+  margin: 1rem;
+}
+.u-m3 {
+  margin: 2rem;
+}
+.u-m4 {
+  margin: 4rem;
+}

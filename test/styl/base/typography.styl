@@ -1,0 +1,49 @@
+@import '../variables'
+
+// HEADING STYLES
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: .875rem; }
+h6 { font-size: .75rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $font-line-height-heading;
+  font-weight: $font-weight-bold;
+  margin-bottom: $space2;
+}
+
+// TYPOGRAPHIC STYLES
+
+small {
+  font-size: 80%;
+}
+
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+// LIST STYLES
+
+ul,
+ol {
+  margin-left: $space1;
+  padding-left: $space2;
+  & > ul,
+  & > ol {
+    margin: 0;
+  }
+}
+
+// BLOCK TEXT ELEMENT STYLES
+
+p,
+ul,
+ol,
+pre,
+hr {
+  margin-bottom: $space2;
+}
