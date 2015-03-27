@@ -11,6 +11,7 @@ cli
   .version(require('./package.json').version)
   .usage('[options] <file ...>')
   .option('-s, --sass', 'Annotate .sass and .scss files')
+  .option('-l, --less', 'Annotate .less files')
   .option('-y, --styl', 'Annotate .styl files')
   .option('-c, --css', 'Annotate .css files')
   .option('-a, --append', 'Output is appended to each matching file')
@@ -29,8 +30,9 @@ if ( cli.args.length ) {
 }
 
 var ext = [];
-if ( cli.sass || cli.styl || cli.css ) {
+if ( cli.sass || cli.less || cli.styl || cli.css ) {
   if (cli.sass) { ext.push('sass', 'scss'); }
+  if (cli.less) { ext.push('less'); }
   if (cli.styl) { ext.push('styl'); }
   if (cli.css) { ext.push('css'); }
 } else {

@@ -1,0 +1,145 @@
+@import '../variables';
+
+// GLOBAL STYLES
+//
+// 1. Universal inheritance
+// 2. https://github.com/jonathantneal/sanitize.css/issues/2
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; // 1
+  text-decoration: inherit; // 1
+  vertical-align: inherit; // 1
+  color: inherit; // 1
+  font-family: inherit; // 1
+  font-size: inherit; // 1
+  font-style: inherit; // 1
+  line-height: inherit; // 1
+  position: relative; // 2
+  margin: 0;
+  padding: 0;
+}
+
+
+// ROOT STYLES
+//
+// 1. Set default font family to sans-serif.
+// 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.
+// 3. IE11+
+
+html {
+  font-family: @font-family-body; // 1
+  font-size: @font-size-base;
+  text-size-adjust: 100%; // 2
+  -ms-overflow-style: -ms-autohiding-scrollbar; // 3
+  box-sizing: border-box;
+  line-height: @font-line-height-body;
+  text-rendering: @font-text-rendering;
+  vertical-align: @font-vertical-align;
+}
+
+// HTML 5 NORMALIZATION
+//
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+// 1. Correct `inline-block` display not defined in IE 8/9.
+// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; // 1
+}
+
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+// Address `[hidden]` styling not present in IE 8/9/10.
+// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+
+audio:not([controls]),
+[hidden],
+template {
+  display: none;
+  height: 0;
+}
+
+// LINK STYLES
+
+// Remove the gray background color from active links in IE 10.
+// Improve readability when focused and also mouse hovered in all browsers.
+
+a {
+  background-color: transparent;
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+// EMBEDDED CONTENT
+
+// Remove border when inside `a` element in IE 8/9/10.
+// Maintain original size
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+// Correct overflow not hidden in IE 9/10/11.
+// Maintain original size
+
+svg {
+  max-height: 100%;
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
+
+// GROUPING CONTENT
+
+// Address differences between Firefox and other browsers.
+
+hr {
+  box-sizing: content-box;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid @color-gray;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: @font-family-mono;
+  overflow: auto;
+}
+
+// TABLES
+
+// Remove most spacing between table cells.
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
